@@ -9,6 +9,7 @@ class Point {
     this.x = x;
     this.y = y;
     this.userData = data;
+    this.quadTree = null;
   }
 }
 
@@ -34,8 +35,8 @@ class Rectangle {
       range.y - range.h > this.y + this.h ||
       range.y + range.h < this.y - this.h);
   }
-
-
+  
+  
 }
 
 // circle class for a circle shaped query
@@ -126,6 +127,7 @@ class QuadTree {
 
     if (this.points.length < this.capacity) {
       this.points.push(point);
+      point.quadTree = this;
       return true;
     }
 
