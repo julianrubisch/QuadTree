@@ -10,7 +10,7 @@ class Point {
     this.y = y;
     this.z = z;
     this.userData = data;
-    this.quadTree = null;
+    this.octoTree = null;
   }
 }
 
@@ -147,7 +147,7 @@ class OctoTree {
 
     if (this.points.length < this.capacity) {
       this.points.push(point);
-      point.quadTree = this;
+      point.octoTree = this;
       return true;
     }
 
