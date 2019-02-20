@@ -2,7 +2,7 @@
   "name": "ct-quadtree",
   "version": "0.0.1",
   "description": "Library for creating and searching Quad Trees",
-  "main": "quadtree.js",
+  "main": "octotree.js",
   "directories": {
     "example": "example"
   },
